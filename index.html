@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+	<head>
+	
+		<meta charset="utf-8">
+		<title>Szkoła - Strona Główna</title>
+		<meta name="description" content="Strona Prywatnego gimnazjum, szkoły gimnazjum im. Mikołaja Reja w Krakowie">
+		<meta name="keywords" content="szkoła, Mikołaj, Rej, Gimnazjum, Liceum, Szkoła Podstawowa, Kraków"/>
+    
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+    <div id="wrapper">
+    <div class="logo"></div>    
+    <div id="rej"></div>    
+    <div class="logo"></div>    
+    <div style="clear:both;"></div>
+        </div>
+        <div class="nav">
+        <ol>
+            <li><a href="#">Srona główna</a></li>
+            <li><a href="#">Something</a>
+            <ul>
+                <li><a href="#">Something</a></li>
+                <li><a href="#">Something</a></li>
+                <li><a href="#">Something</a></li>
+                <li><a href="#">Something</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Something</a> <ul>
+                <li><a href="#">Something</a></li>
+                <li><a href="#">Something</a></li>
+                <li><a href="#">Something</a></li>
+                <li><a href="#">Something</a></li>
+                </ul></li>
+            <li><a href="#">Something</a> <ul>
+                <li><a href="#">Something</a></li>
+                <li><a href="#">Something</a></li>
+                <li><a href="#">Something</a></li>
+                <li><a href="#">Something</a></li>
+                </ul></li>
+            <li><a href="#">Something</a> <ul>
+                <li><a href="#">Something</a></li>
+                <li><a href="#">Something</li>
+                <li><a href="#">Something</a></li>
+                <li><a href="#">Something</a></li>
+                </ul></li>
+            <li><a href="#">Something</a></li>
+        </ol>
+    </div>
+    <div id="container">
+     <div id="info">
+        <div id="patron"><img src="rej.jpg"/></div>
+        <div id="historia">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis volutpat neque, eget dictum leo. Proin accumsan sollicitudin lacus ut vestibulum. Phasellus aliquam lacinia dolor, at vestibulum elit faucibus nec. In et consequat leo. Sed et ex augue. Donec risus est, aliquet id venenatis eu, faucibus a ex. Donec feugiat magna nec felis laoreet molestie. Donec mollis dui non maximus dapibus. Nullam tincidunt ipsum eu ipsum aliquet, sit amet convallis tellus euismod. Donec eu pellentesque eros. Aenean mattis dignissim leo eget ultricies Nam blandit, neque non finibus consequat, augue dui scelerisque arcu, quis scelerisque augue massa sed massa. Donec ligula felis, euismod id tempor in, finibus non lacus. Curabitur rhoncus nisi in hendrerit aliquet. Vivamus quis erat at sem molestie aliquet. Donec molestie, arcu sed tristique interdum, libero metus gravida ex, egestas laoreet leo lectus sit amet tortor. Suspendisse id lorem diam. Duis vel nunc non elit pellentesque acc</div>
+        <div style="clear:both;"></div>
+            </div>
+        <div id="news_cont">
+        <div class="news">
+        <div class="photo"></div> 
+        <div class="tekst"></div>
+        <div style="clear:both;"></div>
+            </div>
+         <div class="news2">
+        <div class="photo"></div> 
+        <div class="tekst"></div>
+        <div style="clear:both;"></div>
+        </div> <div style="clear:both;"></div>
+         <div class="news">
+        <div class="photo"></div> 
+        <div class="tekst"></div>
+        <div style="clear:both;"></div>
+            </div>
+         <div class="news2">
+        <div class="photo"></div> 
+        <div class="tekst"></div>
+        <div style="clear:both;"></div>
+            </div> <div style="clear:both;"></div>
+         <div class="news">
+        <div class="photo"></div> 
+        <div class="tekst"></div>
+        <div style="clear:both;"></div>
+            </div> 
+         <div class="news2">
+        <div class="photo"></div> 
+        <div class="tekst"></div>
+        <div style="clear:both;"></div>
+            </div> <div style="clear:both;"></div>
+         <div class="news">
+        <div class="photo"></div> 
+        <div class="tekst"></div>
+        <div style="clear:both;"></div>
+            </div>
+         <div class="news2">
+        <div class="photo"></div> 
+        <div class="tekst"></div>
+        <div style="clear:both;"></div>
+            </div> <div style="clear:both;"></div>
+         <div class="news">
+        <div class="photo"></div> 
+        <div class="tekst"></div>
+        <div style="clear:both;"></div>
+            </div> 
+         <div class="news2">
+        <div class="photo"></div> 
+        <div class="tekst"></div>
+        <div style="clear:both;"></div>
+            </div> <div style="clear:both;"></div>
+        
+        </div>
+        </div>
+        <div id="footer">Strona została stworzona przez ucznia Gimnazjum Andzeja Kwaśniewskiego, przy konsultacji z jego przyjacielem Antonim Mólem. &copy;</div>
+            <script src="jquery-3.2.1.min.js"></script>
+    
+<script src="jquery-1.11.3.min.js"></script>
+        <script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </body>
